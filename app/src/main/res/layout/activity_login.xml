@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/candado"
+        android:gravity="center|center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/tvTitulo1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Acceso a App Movil CARG"
+            android:textColor="#E12828"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvInstruccion1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Captura datos de usuario"
+            android:textColor="#3E3B3B"
+            android:textSize="20sp"
+            android:textStyle="bold|italic" />
+
+        <ImageView
+            android:id="@+id/ivLogo1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_launcher_foreground" />
+
+        <EditText
+            android:id="@+id/etUsuario"
+            android:layout_width="318dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Usuario:"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:textColor="#000000" />
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="319dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Contraseña:"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/btnEntrar"
+            android:layout_width="217dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Ingresar" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
